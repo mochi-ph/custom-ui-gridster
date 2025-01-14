@@ -23,7 +23,7 @@ A fully customizable UI starter template built with React Server Components and 
 1. Clone the template:
 
 ```bash
-git clone https://github.com/yourusername/gridster.git
+git clone https://github.com/kinde-starter-kits/custom-ui-gridster.git
 cd gridster
 ```
 

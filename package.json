@@ -6,7 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Peter @ Kinde",
-  "license": "ISC",
+  "license": "MIT",
   "description": "",
   "dependencies": {
     "@kinde/infrastructure": "^0.2.1",
