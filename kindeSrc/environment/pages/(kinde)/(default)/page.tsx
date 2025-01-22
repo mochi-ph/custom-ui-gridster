@@ -11,15 +11,6 @@ import {
   type KindePageEvent,
 } from "@kinde/infrastructure";
 
-// Types
-interface PageSettings {
-  bindings: {
-    "kinde.fetch": Record<string, never>;
-    "kinde.env": Record<string, never>;
-    url: Record<string, never>;
-  };
-}
-
 interface LoginHeaderProps {
   heading: string;
   description: string;
@@ -169,13 +160,12 @@ const Layout: React.FC<KindePageEvent> = async ({ request, context }) => {
             --kinde-button-primary-background-color: #272a2c;
             --kinde-button-primary-color: white;
             --kinde-button-border-radius: 8px;
+            --kinde-button-secondary-background-color: #fff;
+            --kinde-button-secondary-border-width: 1px;
+            --kinde-button-secondary-border-color: #e9edec;
+            --kinde-button-secondary-border-style: solid;
           }
 
-          .kinde-button-variant-secondary {
-            border-radius: 8px;
-            background-color: white;
-            border: 1px solid #e9edec;
-          }
         `}</style>
       </head>
       <body>
@@ -192,15 +182,6 @@ const Layout: React.FC<KindePageEvent> = async ({ request, context }) => {
       </body>
     </html>
   );
-};
-
-// Page Settings
-export const pageSettings: PageSettings = {
-  bindings: {
-    "kinde.fetch": {},
-    "kinde.env": {},
-    url: {},
-  },
 };
 
 // Page Component
